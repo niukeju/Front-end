@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-C" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>>
+
+    <!-- 内嵌式 css的书写位置 -->
+    <style>
+        /*这里设置的是下边p标签的内容*/
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <!-- 外链式 将.css文件引入到这个.html文件中 -->
+    <link rel="stylesheet" href="./04_css样式.css">
+
+</head> 
+
+<body>
+    
+    <!-- 
+        css样式
+        
+        主要作用：修饰标签
+        
+        css样式书写位置：
+        · 行内样式：把样式书写在标签上
+        · 内嵌式：把css样式书写在html文件中
+        · 外链式：书写在当前的.html文件外面，我们在外面书写的时候要写在一个.css文件中，这个.css文件要通过link标签引入到当前的这个.html文件中才能起作用
+     -->
+
+    <div>hello world</div>
+    <!-- 行内样式:直接写在标签上的 -->
+    <div style="width: 100px;height: 100px;background-color:aquamarine"></div>
+
+    <!-- 内嵌式：上边的内嵌式css的书写格式将会在这里展示出来 -->
+    <p>我是一个p标签</p>
+
+    <!-- 外链式 -->
+    <h1>hello world</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-C" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 使用内嵌式来给元素设置样式：div{} */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+        }
+        /* 使用类名来查找元素：.box{} */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        /* 使用id来查找元素的时候会被覆盖，只显示最后一个出现的id：.box */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:black;
+        }
+        /* 使用id来查找元素：#box{} */
+        #box{
+            width: 300px;
+            height: 300px;
+            background-color:blue;
+        }
+        /* 使用id来查找元素的时候会被覆盖，只显示最后一个出现的id：#box */
+        #box{
+            width: 300px;
+            height: 300px;
+            background-color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        之前我们给元素（标签）设置样式都是通过标签名来设置的，现在我们通过查找元素来设置
+        一、分类
+            Ⅰ、通过类名来查找元素
+                在标签上书写一个class的关键字
+                书写位置：标签上
+                书写语法：class="值"
+            Ⅱ、通过id来查找元素
+                书写位置：标签上
+                书写语法：id="值"
+        二、类名查找元素 和 id查找元素 的区别
+            Ⅰ、类名
+                同一个类名可以出现多次，也就是说多个元素可以使用同一个类名多次
+            Ⅱ、id
+                id是唯一的，同一个id只能出现一次\
+            Ⅲ、相同点
+                类名和id两者都是会被覆盖的，只有最后一个会生效
+     -->
+
+    <!-- 使用内嵌式来给元素设置样式 -->
+    <div>hello world</div>
+    
+    <!-- 查找元素的两种方法 -->
+
+    <!-- 1、使用类名来查找元素：class="值" -->
+    <div class="box">你好 世界</div>
+    
+    <!-- 类名和id的区别：同一个类名可以出现多次 -->
+    <p class="box">123123</p>
+
+    <!-- 2、使用id来查找元素：id="值" -->
+    <div id="box">hello world 你好 世界</div>
+
+    <!-- 类名和id的区别：同一个id只能出现一次 -->
+    <p id="box">456456</p>
+
+</body>
+
+</html>

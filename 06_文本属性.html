@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+
+    <style>
+        div{
+            color: burlywood;
+        }
+
+        h1{
+            color: aqua;
+            text-align: center;
+        }
+
+        h2{
+            text-align: left;
+        }
+        h3{
+            text-align: right;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        b{
+            text-decoration: overline;
+        }
+        c{
+            text-decoration: line-through;
+        }
+        d{
+            text-decoration: underline;
+        }
+
+        .normal{
+            font-style: normal;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .oblique{
+            font-style: oblique;
+        }
+
+        .normal{
+            font-weight: normal;
+        }
+        .light{
+            font-weight: lighter;
+        }
+        .thick{
+            font-weight: bold;
+        }
+        .thicker{
+            font-weight: 900;
+        }
+
+        .box{
+            font-size: 50px;
+            font-weight: 900;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    </style>
+</head>
+
+<!-- 文本属性：就是用来修饰文字的一些属性
+
+1. 常见的属性
+    
+1.1 color属性
+用于设置文本的颜色。
+
+1.2 text-align属性
+用于设置文本的水平对齐方式。
+
+1.3 text-decoration属性
+用于设置或删除文本装饰
+
+1.3.1 text-decoration:overline属性
+在文本上方添加上划线
+
+1.3.2 text-decoration:underline属性
+在文本下方添加下划线
+
+1.3.3 text-decoration:line-through属性
+在文本上添加删除线
+
+1.4 font-style属性
+设置字体样式，用于指定斜体文本。
+
+1.4.1 font-style：normal
+字体样式不发生改变。
+
+1.4.2 font-style：italic
+字体变为斜体。
+
+1.4.3 font-style：oblique
+字体变为斜体。
+
+-->
+
+<body>
+  
+    <div>hello world</div>
+
+    <h1>你好世界</h1>
+
+    <h1>标题1(居中对齐)</h1>
+    <h2>标题2(左对齐)</h2>
+    <h3>标题3(右对齐)</h3>
+
+    <p>没有下划线的连接：<a href="https:www.w3schools.com.cn">w3schools</a></p>
+    <br>
+
+    <b>text-decoration:overline属性--上划线</b>
+    <br>
+    <c>text-decoration:line-through属性--删除线</c>
+    <br>
+    <d>text-decoration:underline属性--下划线</d>
+    <br>
+
+    <p class="normal">This is a paragraph in normal style.</p>
+    <p class="italic">This is a paragraph in italic style.</p>
+    <p class="oblique">This is a paragraph in oblique style.</p>
+
+    <p class="normal">This is a paragraph.</p>
+    <p class="light">This is a paragraph.</p>
+    <p class="thick">This is a paragraph.</p>
+    <p class="thicker">This is a paragraph.</p>
+
+    <div class="box">字体大小</div>
+
+</body>
+</html>
